@@ -4,12 +4,31 @@
 body {
     background-color: aquamarine;
 }
-
-
+.column {
+      width: 100%;
+    }
+/* Create three equal columns that float next to each other */
     /* styled for screens 600px and larger */
 /* @media screen and (min-width:600px)  */
 @media screen and (width>600px){
     body {
     background-color: blue;
     }
+    .column {
+    float: left;
+    width: 33.33%;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 }
+
+
+
+
+  
+  
